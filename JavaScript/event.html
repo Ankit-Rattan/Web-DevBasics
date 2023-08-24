@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and Listening to Events</title>
+    <style>
+        #btn{
+            padding: 10px 15px;
+            background-color: red;
+            border: 2px solid black;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<!-- 
+    Browser Events: 
+        ->click
+        ->contextmenu: When right click is done by the user this is fired.
+        ->mouseover/mouseout: Mouse bahar nikla kisi element ke.
+        ->mousedown/mouseup: mouse ka button dabana.
+        ->mousemove
+
+        ->submit
+        ->focus: focuses on input tag.
+        ->DOMContentLoaded: When all DOM content in HTML file is loaded, then this is fired.
+        
+        -> transitionend
+
+ -->
+<body>
+
+    <div class="container">
+        <h1>This is Me!</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aperiam fugiat, reiciendis explicabo fugit, consequatur vero aliquam minus labore pariatur quasi consectetur voluptas accusantium possimus cumque placeat adipisci quaerat recusandae ullam fuga iusto cupiditate a dolore. Ipsa dolorem necessitatibus, rem repellendus exercitationem ad quisquam ducimus facere iste excepturi! Expedita placeat voluptatem vero autem eum commodi optio omnis provident, repellat porro dicta fuga ex. Accusantium, inventore. Laborum exercitationem ad, nulla amet ipsum atque minima commodi vel eveniet facilis praesentium labore ullam porro sit molestias voluptates delectus cupiditate deserunt molestiae velit mollitia incidunt nemo? Quaerat tempore qui rem fugiat culpa. Tempore, modi?</p>
+    </div>
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+    
+    <script>
+        
+        let para = document.getElementById("para");
+        para.addEventListener('mouseover', function run(){
+            //alert('Mouse Inside Para!')
+            console.log("Mouse is inside !");
+
+        })
+        para.addEventListener('mouseout', function run(){
+            //alert('Mouse is outside !')
+            console.log("Mouse is outside !")
+
+        })
+
+
+        function toggleHide(){
+            //let btn = document.getElementById("btn");   // It can work without this also.
+            //let para = document.getElementById("para");
+            if(para.style.display!="none"){
+                para.style.display = 'none';      
+            }
+            else{
+                para.style.display=  'block';
+            }
+        }
+    </script>
+</body>
+</html>

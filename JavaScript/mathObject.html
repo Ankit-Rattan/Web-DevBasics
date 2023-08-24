@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is maths object</h1>
+    </div>
+
+     
+    <script>
+        let m = Math;
+        console.log(m);
+
+        console.log("The value of pi is", Math.PI);
+
+        a = 75.321
+        console.log(Math.round(a));   // round off to the nearest integer
+
+
+        // Generating random number;
+        let r = Math.random()  // -> by default it will generate number between zero and one.
+        
+        console.log(r);
+
+        /* for generating random numbers between a and b  below formula is used: 
+                             = a+ (b-a)*Math.random
+        
+        */
+
+        a = 1;
+        b = 100;
+        console.log(a+ (b-a)*Math.random());
+    </script>
+</body>
+</html>

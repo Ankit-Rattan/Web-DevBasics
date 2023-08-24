@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction Using alert, confirm and prompt</title>
+</head>
+<body>
+    <div class="container">
+        This is a Page!
+    </div>
+    <script>
+        // Alert is a function, which takes a message string and pop up into your screen.
+        // Alert does not return anything.  If you console.log in alert you will get 'undefined'.
+
+        //alert("This is a message1")
+        
+        // Prompt -> it is also pop like alert, but it will take input from the user.
+        //Prompt -> prompt(message/question, default argument)
+        
+        //let nme = prompt("What is your name?", "Guest!");
+
+        // Whatever answer we write in prompt, it will safe in the variabel correspond to the promt. Like in above case it is nme.
+
+        //console.log(nme);
+        
+        // Confirm is used, when we want a confirmation from the user.
+        // In confirm also, it stores the value and the suitab
+        
+        //console.log(cnf);
+
+        let cnf = confirm("Do you really want to login!");
+
+        if(cnf){
+            console.log("User is Logged In");
+        }
+        else{
+            console.log("User is NOT Logged In")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors and more designing</title>
+    <style>
+        .container{
+            background-color: antiquewhite;
+            border: 3px solid red;
+            margin: 34px auto;
+            padding: 34px;
+            width: 700px;
+
+
+        }
+        .btn{
+            background-color: aquamarine;
+            padding: 8px;
+            border: none; /* To avoid unwanted border*/
+            cursor: pointer ;  
+            border-radius: 5px; 
+                     
+        }
+
+        /* .rdm{
+            background-color: rgb(14, 139, 30);
+            padding: 7px;
+            border-radius: 5px;
+            color: black;
+
+        } */
+        #r1{
+            text-decoration: none;
+            color: black;
+            background-color: aqua;
+            margin: 8px;
+            padding: 5px;
+            border-radius: 5px;
+
+        }
+        
+        /* a{
+            text-decoration: none;  -> Used for removing underline in anchor tag 
+            color: black;
+        } */
+        #r1:hover{
+            color: blanchedalmond;
+            background-color: black;
+        }
+        #r1:visited{
+            /* color: blueviolet; */   /* This changes color when link is visited*/
+        }
+        #r1:active{
+            color: aqua; /* When link is clicked, during that time ti will change to this color*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container" id="cont">
+        <h3>
+            This is my heading
+        </h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem doloribus consequatur nesciunt consectetur harum unde, et sunt. Enim hic eos mollitia quaerat assumenda sequi, similique repellendus quas, voluptatibus quidem ex.
+        </p>
+        <a href="index.html" class="rdm" id="r1">Read more!</a>
+        <button class="btn"> Contact Us</button>
+    </div>
+</body>
+</html>

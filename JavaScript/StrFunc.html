@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions</title>
+</head>
+<body>
+    <script>
+        var str = "This is a string";
+        console.log(str); 
+        var pos = str.indexOf("is");   // It will show the index of the string where it found 'is'. Here it gives two b/c in 'THIS', at 2 index 'i' is there for 'is'.
+        // indexOf func will give index of first occurence of the substring.(that's why it gives 2 for as the index of 'is')
+        console.log(pos); 
+
+        // For the last occurnce of the substirng ->
+        pos = str.lastIndexOf('is');
+        console.log(pos);
+        
+        // Substring from a string.
+        //Method-1->
+        var substr = str.slice(1,6) // str.slice(start, end)
+        console.log(substr);
+        //Method-2 ->
+        var substr2 = str.substring(1,6);
+        console.log(substr2);
+        
+        // NOTE: Diff. btw substring and slice func is that in slice func we can give NEGATIVE values also, but in substring we can give only positive value.
+
+        //Method-2 ->
+        var substr3 = str.substr(1,4) //str.substr(start, length)
+        // here in substr, lenght means that from start it should go to that much lenght.
+        console.log(substr3);
+
+        // Replaced Func -> used to replace the substring with new substring.
+        var repstr = str.replace('string', 'ankit');  
+        // str.replace('old_str', 'new_str')    
+        console.log(repstr);
+
+        //NOTE: replace func donot change the actual string. 
+
+        // Chaning strign case: 
+        console.log(str.toUpperCase());  // All characters to upper case
+        console.log(str.toLowerCase());  // All character to lower case
+        
+        // You can concatinate using '+', but also you can concatinate with concatinate func.
+        var constr = str.concat(' Added String');
+        console.log(constr); 
+        console.log(str);  
+        
+        // NOTE: This also will not affect the actual string.
+
+        //trim func will remove the white spaces from start and end. It will not remove white spaces in between the strings.
+        
+        var str1 = "    THis is       string        ";
+        console.log(str1);  
+        console.log(str1.trim());  
+        
+        // extracting character from str.
+        var charstr = str.charAt(3);
+        console.log(charstr);  
+
+        //string slicing
+        console.log(str[2]);
+
+
+
+    </script>
+</body>
+</html>

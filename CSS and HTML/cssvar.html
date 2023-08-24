@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables  and custom properties</title>
+    <style>
+        /*variable created is local varaible only, for using it in other class css section, you have to rewite the variable in that class section
+        NOTE: For making the variable to global you have to mention it in different section i.e :root section.
+        */
+        :root{
+            --primary-color: grey; /* This is created as a global variable*/
+            --max-width: 33px;
+        }
+        .box{
+            --box-color: blue; /* declaring css variable with name box-color*/
+            width: 200px;
+            height: 200px;
+            background-color:var(--box-color);   /*Using the declared variable property*/
+            border: 2px solid red;
+            box-shadow: 2px 2px var(--primary-color);
+            margin: 2px 9px ;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: var(--max-width);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+JavaScript->
+    - It is a client side scripting language (Interface Logic)
+    -used to make web pages alive
+    - When JavaScript was created, it was initially called 'Live-Script', but java was popular at that time so name decided as 'JAVASCRIPT'.
+
+    - DOM : Document Object Model - > It is ultimately a page of object, it includes html, css, body, etc.
+
+What JavaScript can do-> 
+    - It can execute not only in browser, but also on the servers(i.e used as a backend also).
+    - It is now used as both, client as well as server side language.
+    
+NOTE: JavaScript do not have any connections with low-level CPU.
+
+            JavaScript  --> Browser --> Execute.
+
+WHat JS can do in browser?
+    - Add new HTML and change existing HTML from DOM.
+    - React to Events.(Action that comes from user to browser.)
+    - Ajax Request : It is get or post request that comes from network.
+    - Get and Set Cookies and use local storage.
+    
+What JS can NOT do in browser?
+    - Read or Write to/from Computer HardDisk.
+    - Save Origin policy. In this, lets suppose in one tab ther is a site 'A' is open and in another tab, there is another site is open 'B'. Now acc. to Save Origin Policy if A ask for B to share its data, then it will not allow to share any data.
+
+     
+NOTE: The above is valid only for JS Web-Version. However in other versions of JS you can access all the rest of the files and can use it as a normal Programming language.
+
+
+What makes JS unique?
+    - It has a support of HTML and CSS.
+    -For simple things there is Simple APIs (Application Programming Interface).
+    -It support major modern browser.And also enabled by default.
+
+JS Version: 
+    -It is maintained by its community.
+    -ECMA is a standard of scripting. It gives you new updates time to time.JS is updated through ECMA new versions.
+        

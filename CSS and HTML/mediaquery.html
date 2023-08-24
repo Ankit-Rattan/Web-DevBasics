@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            background-color: red;
+            color: white;
+            text-align: center;
+            font-size: 60px;
+            display: none;
+
+        }
+        @media (max-width:300px) {
+            #box1{
+                display: block;
+                background-color: antiquewhite;
+            }
+        }
+        @media (min-width:300px) and (max-width: 600px) {
+            #box2{
+                display:block;
+                background-color: aquamarine;
+            }
+        }
+        @media (min-width:600px) and (max-width: 900px) {
+            #box2{
+                display:block;
+                background-color: cadetblue;
+            }
+        }
+
+
+    </style>
+</head>
+<!-- 
+    Media Query is the way which help us to manage that which css file need to be added or removed when resolution is changing 
+
+
+-->
+
+<body>
+    <div class="box" id="box1">I am one</div>
+    <div class="box" id="box2">I am two  </div>
+    <div class="box" id="box3">I am three afer two </div>
+    <div class="box" id="box4">I am four after three</div>
+    
+</body>
+</html>

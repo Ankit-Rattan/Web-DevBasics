@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Area in Grid!</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 2rem;
+
+            /* It works like a matrix */
+            grid-template-areas:    
+            'navbar navbar navbar navbar'
+            'section section section aside '
+            ;
+        }
+        .item{
+            border: 2px solid black;
+            background-color: bisque;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home About Contact-Us
+        </div>
+        <div id="section">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam hic numquam ullam explicabo officia! Saepe doloribus sunt molestiae eos ullam! Dolore accusamus eligendi quos?
+        </div>
+        <div id="aside">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam exercitationem architecto numquam!
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z-index</title>
+    <style>
+        /* Visibility: hidden   -> using hidden in visibilty will only hide the element but not the space taken by it.
+        Display: none   -> it will remove the elements with its space. */
+        
+        /*by default visibility is set to visible*/
+        
+        /*
+        z-index only work with positioned elements
+        *EXCEPTION:   in default positon(i.e: position :static ) it will not work
+        */
+        .box{
+            width: 180px;
+            height: 180px;
+            border: 2px solid black;
+        }
+        #box1{
+            position: relative;
+            top: 15px;
+            z-index: 12px;
+            background-color: aqua;
+        }
+        #box2{
+            /* display: none   ; */
+            /* visibility: hidden;   */
+            position: relative;
+            top: 10px;
+            z-index: 10px;
+            
+            background-color: green;
+        }
+        #box3{
+            background-color: yellow;
+        }
+        #box4{
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+
+</html>

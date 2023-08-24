@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array and Objects</title>
+</head>
+<body>
+    <div class="container">This is Page</div>
+    <script>
+        
+        // Creating Arrays->    
+        let arr=[1,4,'Ramesh', true];
+        console.log(arr);
+
+        
+        // new keyword is used for creating new objects
+        let obj1 = new Array(1,3,5,"Hello");   //-> This is making the object of the array.
+        console.log(obj1);
+        
+        // Sorting in Array->
+        let arr2 = [1,4,7,1,3,7,2,1,0];
+        arr2 = arr2.sort();
+        console.log(arr2);
+        
+        // Adding elements into array.
+        arr2.push("this is pushed");
+        console.log(arr2);
+
+        let arr3 = new Array(20) // -> This means: an array of size 20 is created.
+        arr3.push("This is 21st element in the array");
+        console.log(arr3);
+        console.log(arr3.length);
+        
+        
+        // Creating Objects->
+        let emp = {
+            one: 'Rajesh',
+            two: 'Ankit',
+            three: 'Rattan',
+        }
+        console.log(emp);
+
+        // For accessing elements in the objects->
+        console.log(emp.one);
+        console.log(emp[`one`]);    // Both ways can be used for accesing elements
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position and other</title>
+    <style>
+        /* CSS Position: Static(default), Absolute,  Relative, Fixed, Sticky
+          -> Relative : It is used to change the position with respect to its old position
+          -> Absolute: It change its position relative to its parent position (i.e container in this case)normal postion, i.e left-top
+          -> Fixed: By scrolling it will come with screen.
+        */
+        .container{
+            border: 2px solid black;
+            
+            height: 2000px;
+        }
+        .box{
+            display: inline-block;
+            border: 2px solid black;
+            width: 150px;
+            height: 150px;
+            margin: 2px     ;
+        }
+        #box3{
+            position: relative;
+            /* position: relative; */
+            /* top: 34px;
+            left :34 px; */
+
+        }
+        #box2{
+            position: relative;
+            /* top: 30px;
+            left: 30px; */
+
+        }
+        #box4{
+            /* position: fixed; */
+            position: relative;
+                
+        }
+        #box5{
+            position: sticky;
+            top: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">5</div>
+        
+    </div>
+    </body>
+</html>

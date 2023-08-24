@@ -1,0 +1,220 @@
+<!DOCTYPE html> <!-- THis is telling that we are usign a HTML 5-->
+
+<!--Attributes: these are used to add more info to the tag. For ex. below lang in html tag is the attribute which is showing that the language we are using is english -->
+<html lang="en">
+
+<head> <!--head is the part which is for user purpose only. Nothing will be visible on Web-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--This is for the compatbily of web page view on differetn devices-->
+    <title>first prog</title>
+    <style>
+        .vid1 {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Creating header file-->
+    <header>
+        <pre>This is header file      you can use links here for going to differetn website.     menu       buttons etc</pre>
+
+    </header>
+
+
+
+    <h1>Hello World!</h1>
+    <a href="https://www.youtube.com/watch?v=HcOc7P5BMi4&t=234s"> Google</a>
+    <br>
+    <a href="https://www.youtube.com/watch?v=HcOc7P5BMi4&t=234s" target="_main"> Google</a>
+    <!--in above the target="_main " means that now when links is clicked it will open new tab. Otherwise without this attribute is opend the link on same page-->
+
+    <br>
+    <!--hr tag is horzontal ruler is used to make a horizontal line to separat the line-->
+    <!-- br is used for the next line.-->
+    <!-- pre tag is same a p tag but in this it also  counts the spaces and lininegs-->
+
+    <h2>Hello agian</h2>
+    <br>
+    <h2>How are you</h2>
+    <hr>
+    <h2>i am fine</h2>
+
+    <!--Section tag, <section> is used for making section in webpage-->
+    <section>
+        This is section 1
+    </section>
+    <section>
+        This is section 2
+    </section>
+    <br>
+
+    <!--article tag is used to write article on the page-->
+    <article>
+        This is my article
+    </article>
+    <br>
+    <!--aside tag: used for the content aside of main contetn, like ads on webpages-->
+    <aside>
+        this is aside tag, gnerally ised for the tag
+    </aside>
+    <br>
+
+    <!-- div tag : div is a container used for other html elements. it is also called non-sematic tag because it does not have its own specific role
+    . If there is no element inside div tag, then its hight is zero.
+    Div is a block element (i.e takes full width)-->
+    <div>
+        <p> Using div tag</p>
+    </div>
+
+    <!-- Span Tag:  span is also a container used for other html elements.  
+        but is INLINE element(i.e utni hi jagah lega jitna needed hoga, not like block width.)-->
+    <span>
+        <p> This is span</p>
+    </span>
+    <br>
+    <br>
+    <p>List: </p>
+    <br>
+    <!--List :  types -> ordered list and unordered list
+        -in order list: bullet is numbers or any other sequence
+        -in unordered list: bullets are the symbols like dots or other symboles-->
+
+
+    <!--Creating unordered list-->
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <ul>
+            <li>one </li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+        <li>three</li>
+    </ul>
+    <br>
+    <!--creating ordered list-->
+    <ol>
+        <li>one </li>
+        <li>two</li>
+        <ol>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ol>
+        <li>thre</li>
+    </ol>
+    <br>
+    <br>
+    <p>TABLE</p>
+    <br>
+    <br>
+    <!--table in HTML
+        <tr>: used to display table row
+        <td>: used to display tabel data
+        <th>: used to display tabel header
+        <caption>: used for showing caption of the table
+        <thead>: used to internally  hightlight table head
+        <tbody>: to internally   highlight tabel body\
+        <th colspan>: colspan is a attribute used to span the header width columnwise in a table, means ek header two collumn ka heading ban sakta hain
+
+    -->
+    <table>
+        <caption>Table First</caption>
+        <thead>
+
+            <tr>
+                <th>Name</th>
+                <th>College</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>Ankit</td>
+                <td>NIT Delhi</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <p>
+        Forms
+    </p>
+    <!--Forms in a Table-->
+    <!--Action attribute:  is used to define that what action need to perform when form is submitted. e.g: <form action ="/action.php">
+        -Input tag: <input type ="text" placeholder="Enter Name"> here type means which type of data is to be entered (here it is )   
+        -Label tag: is used to label the box, for which it is using. <label for = "id1">
+        -Radio Button : it is button which is selected one at a time.
+        -CheckBox: it is used to assign multiple option for a button
+        -Text area: it is a big space created wher you can write anything.
+        -Select Tag: It is used for drop down.
+    -->
+
+    <form>
+        <label for="Name">
+            Name
+        </label>
+        <div>
+
+            <input type="text" placeholder="username">
+        </div>
+        <label for="Name">
+            password
+        </label>
+        <input type="password" placeholder="password">
+        <label for="id1">
+            <input type="text" placeholder="type something here, inside label">
+        </label>
+        <br>
+        <label id="101">
+            <input type="radio" value="Radio B1" name="class" id="101">Radio B1
+        </label>
+        <label id="102">
+            <input type="radio" value="Radio B2" name="class" id="102">Radio B2
+        </label>
+        <br>
+        <select name="trial">
+            <option value="Opt1">Opt1</option>
+            <option value="Opt2">Opt2</option>
+            <option value="Opt3">Opt3</option>
+
+        </select>
+        <br>
+        Feedback
+        <br><textarea name="feedback" id="101" placeholder="give your feedback here!">
+        </textarea>
+        <br>
+        <input type="submit" value="submit">
+
+
+
+    </form>
+    <!--Overall in a div tag (i.e in a whole section) we can assign a id and class here also
+        The benefit of this is that, instead of assigning properties to the indivial memeber of the same id we can assign it to the id which will be assign to all.
+    -->
+    <div id="id1" class="group 1">
+        <h3>hello himanshu</h3>
+
+    </div>
+    <br>
+    <footer>This is footer</footer>
+    <br>
+    <!--Iframe tag: website inside website-->
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/HcOc7P5BMi4"
+        title="HTML Tutorial for Beginners | Complete HTML with Notes &amp; Code" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    <br>
+    <!-- Video tag: to make vid visible on website-->
+    <div class="vid">
+
+        <video class="vid1" src="VID-20220101-WA0024.mp4" controls height="300px">My
+            Video</video><!--COntrol tag breing sall video control like pause and resuem button etc-->
+    </div>
+</body>
+
+</html>

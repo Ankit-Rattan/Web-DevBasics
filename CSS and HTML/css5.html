@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #divid{
+            border: 5px solid black;
+            border-width: 10px;
+        }
+         #first{
+            background-color: antiquewhite;
+            border : 3px solid black;
+            /* padding: 50px;
+            margin : 30px; */
+            float: left;   /* used for the alignment of the elements */
+            width: 25%;
+            
+
+         }
+         #second{
+            background-color: aquamarine;
+            border: 5px dashed brown;
+            /* padding: 120px; */
+            /* padding: 50px 70px 40px 50px;   /* padding= top right bottom left  */
+            /* margin: 50px; */
+            float: left;
+            width: 25%;
+            margin-left: 20px;
+            margin-right:20px ;
+            /* clear: left  ;    used for the control of the flow of the float allignments */
+         }
+         #third{
+            background-color: antiquewhite;
+            border: 3px solid black;
+            float: left;
+            width: 30%;
+            
+         }
+    </style>
+</head>
+<body>
+    <!-- Padding : It is the space between border and your content  -->
+    <!-- margin :  It is the space we make after the border -->
+    <div id="divid">
+        <h2 id="container">This is the first heading </h2>
+        <p id="first">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo dolore dignissimos deleniti exercitationem excepturi rerum ut? Impedit veritatis nulla nobis veniam eaque sit repellat ut, suscipit minus nisi qui reprehenderit.
+        </p>
+        <p id="second">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo dolore dignissimos deleniti exercitationem excepturi rerum ut? Impedit veritatis nulla nobis veniam eaque sit repellat ut, suscipit minus nisi qui reprehenderit.
+        </p>
+        <p id="third">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo dolore dignissimos deleniti exercitationem excepturi rerum ut? Impedit veritatis nulla nobis veniam eaque sit repellat ut, suscipit minus nisi qui reprehenderit.
+        </p>
+    </div>
+    
+</body>
+</html>

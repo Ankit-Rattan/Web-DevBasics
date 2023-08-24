@@ -1,0 +1,2 @@
+JSON -> Java Script Object Notations.
+It s a format to store and tranport data

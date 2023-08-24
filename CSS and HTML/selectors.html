@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        input{
+            display:block ;
+        }
+        .container{
+            display: block;
+            margin: auto;
+            width: 233px;
+        }
+        /* this is pseudo selector for selecting only type text input in forms */
+        input[type="text"]{
+            border: 2px solid red;
+        }
+        /* nth-child will apply operation on the given number or position in the sequecne */
+        /* li:nth-child(3){
+            color: blue;
+        } */
+        /* this will apply operation on every second element */
+        /* NOTE: n in this starts from Zero */
+        li:nth-child(2n+0){
+            color: red;
+        }
+        li:nth-child(odd){
+            color: blue;
+        }
+
+    </style>
+</head>
+<!-- 
+    Different features of SELECTORS:
+    
+1. : div p{   }   -> This will operate all operations on every p inside div.
+2.  : div > p{   }-> this will operate on that p that is exatly after div( means should no other tag between p and div.)
+
+
+ -->
+<body>
+    <div class="container">
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item1">Item1</li>
+            <li class="item" id="item2">Item2</li>
+            <li class="item" id="item3">Item3</li>
+            <li class="item" id="item4">Item4</li>
+            <li class="item" id="item5">Item5</li>
+        </ul>
+    </div>
+    
+</body>
+</html>

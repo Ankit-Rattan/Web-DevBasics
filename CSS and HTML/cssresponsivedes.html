@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive design</title>
+    <style>
+        html{
+            font-size: 20px;
+        }
+        .container{
+            font-size: 10px; 
+        }
+        h1{
+            text-align: center;
+        }
+
+
+        #first{
+            /* em-> em is the font size with times(respect to the parent) font size,(in this case it is container) */
+            font-size: 10em;  /* 10px*10=100px  */
+
+        }
+        #second{
+            /* rem: it will generate the font size which will be the given rem times the font size given to html. */
+
+            font-size: 10rem;   /* 20px*10=200px  */
+        }
+    </style>
+</head>
+<!--
+    -> Responsive Design: is the way through which website can be made compatible with all devices and resolution.
+    -> Ways to achive Responsive Design:
+        -> Setting up the viewport.
+        -> Use max-width/max-hieght.
+        ->Using CSS Media Queries.
+        -> Using rem/vh/vw units over pixels.
+    -> Viewport Height (vh): It will generate the hight till bottom when height=100vh 
+
+ -->
+<body>
+    <div class="container">
+        <h1 id="first"> This is a heading</h1>
+        <h1 id="second"> This is a heading</h1>
+        <h1 id="third"> This is a heading</h1>
+        <h1 id="fourth"> This is a heading</h1>
+    </div>
+    
+</body>
+</html>
